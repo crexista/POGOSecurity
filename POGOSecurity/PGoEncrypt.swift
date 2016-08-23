@@ -1,17 +1,17 @@
 import Foundation
 
-class PGoEncrypt {
+public class PGoEncrypt {
     init () {
         
     }
     
-    func randomBytes(len: Int? = 32) -> NSData {
+    public func randomBytes(len: Int? = 32) -> NSData {
         var randomBytes = [UInt8](count: len!, repeatedValue: 0)
         SecRandomCopyBytes(kSecRandomDefault, len!, &randomBytes)
         return NSData(bytes: randomBytes, length: len!)
     }
     
-    func encryptUsingLib(input: NSData, iv_: NSData? = nil) -> NSData {
+    public func encryptUsingLib(input: NSData, iv_: NSData? = nil) -> NSData {
         var iv: NSData? = iv_
         if iv_ == nil {
             iv = randomBytes()
