@@ -1,8 +1,7 @@
 import Foundation
 
 public class PGoEncrypt {
-    init () {
-        
+    public init () {
     }
     
     public func randomBytes(len: Int? = 32) -> NSData {
