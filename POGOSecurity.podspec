@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.authors  = { 'crexista' => 'fake@fake.xxx' }
   s.homepage = 'crexista'
   s.summary = 'POGOSecurity'
-  s.source = { :git => 'https://github.com/crexista/POGOSecurity' }
+  s.source = { :git => 'https://github.com/crexista/POGOSecurity.git' }
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.9'
